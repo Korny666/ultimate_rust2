@@ -9,6 +9,9 @@ use aquarium::Dolphin;
 // - Have the play_time function return a `Result<Vec<String>>`. The vector of Strings will
 //   represent successful outcomes of various dolphin tricks.
 
+// Silence some warnings so they don't distract from the exercise.
+#[allow(clippy::vec_init_then_push)]
+
 // fn play_time(dolphin: &Dolphin) -> ... {
 //     let mut responses = vec![];
 //     // 2b. Call the .say_your_name() method on `dolphin`, use `?` to unwrap the value, and push
